@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body{
+  display: block;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 20px;
+  background: #005f73;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  justify-content: center;
+  padding: 30px;
+  border-radius: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.title {
+  
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  font-family: 'Viaoda Libre', cursive;
+}
+
+.quote{
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: 'Tangerine', cursive;
+  font-size: 1.9em;
+  font-weight: 700;
+}
+
+#quote{
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 1.9em;
+}
+
+.author{
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 1.8em;
+  text-align: right;
+  margin-right: 15px;
+}
+
+/* button */
+.test{
+  margin-top: 30px;
+  
+}
+
+button{
+  position: absolute;
+  bottom: 10px;
+  appearance: none;
+  font-family: 'Viaoda Libre', cursive;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 5px;
+  width: 250px;
+  cursor: pointer;
+  font-size: 20px;
+  transition-duration: 0.25s;
+}
+
+button:hover {
+  background-color: rgb(245, 247, 249);
+  font-weight: bolder;
 }
