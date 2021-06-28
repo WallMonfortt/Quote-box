@@ -16,7 +16,7 @@ function App() {
   const change = () => {
     setValue(Math.floor(Math.random()*101));
     let col = Math.floor(Math.random()*25);
-    let col2 = Math.floor(Math.random()*25);
+
     //Colors
     let colors = 
     ["#b191ff","#7d8ca3","#52ffb8","#c15d61","#646881","#dc2f02",
@@ -27,8 +27,6 @@ function App() {
     //Set backgroud colors
     let body =document.getElementById("body");
     body.style.backgroundColor = colors[col];
-    let quote = document.getElementById("quote");
-    quote.style.backgroundColor = colors[col2]
     
   }
 //Quote & author
@@ -37,7 +35,8 @@ function App() {
 
   return (
     <div>
-      <h1 className="title">Quote Magic Box</h1>
+      <div className="title"><h1 >Quote Magic Box</h1></div>
+      
       <div className="App">
         
         <div className="quote">

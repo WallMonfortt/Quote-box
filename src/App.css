@@ -21,24 +21,33 @@ body{
 
 
 .title {
-  
   text-align: center;
   margin-bottom: 40px;
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-family: 'Viaoda Libre', cursive;
+}
+
+.title h1 {
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid black;
+  display: inline-block;
+  border-radius: 0 35px 0 35px;
+  padding: 15px;
+  
 }
 
 .quote{
   text-align: center;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 35px 0 35px 0;
+  background-color:rgba(255, 255, 255, 0.45) ;
   font-family: 'Tangerine', cursive;
   font-size: 1.9em;
   font-weight: 700;
+  border: 3px solid black;
 }
 
 #quote{
-  border-radius: 15px;
   padding: 10px;
   font-size: 1.9em;
 }
@@ -77,4 +86,114 @@ button{
 button:hover {
   background-color: rgb(245, 247, 249);
   font-weight: bolder;
+}
+
+.bg-bubbles{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+  z-index: 1;
+}
+
+li{
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.25);
+  bottom: -160px;
+  
+  animation: square 25s infinite;
+  transition-timing-function: linear;
+}
+li.one{
+  left: 10%;
+}
+li.two{
+  left: 20%;
+  
+  width: 80px;
+  height: 80px;
+  
+  animation-delay: 2s;
+  animation-duration: 17s;
+}
+
+li.three{
+  left: 25%;
+  animation-delay: 4s;
+}
+
+li.four{
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  
+  animation-duration: 22s;
+  
+  background-color: rgba(255, 255, 255, 0.20);
+}
+
+li.five{
+  left: 70%;
+}
+
+li.six{
+  left: 80%;
+  width: 120px;
+  height: 120px;
+  
+  animation-delay: 3s;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+li.seven{
+  left: 32%;
+  width: 160px;
+  height: 160px;
+  
+  animation-delay: 7s;
+}
+
+li.eight{
+  left: 55%;
+  width: 20px;
+  height: 20px;
+  
+  animation-delay: 15s;
+  animation-duration: 40s;
+}
+
+li.nine{
+  left: 25%;
+  width: 10px;
+  height: 10px;
+  
+  animation-delay: 2s;
+  animation-duration: 40s;
+  background-color:rgba(255, 255, 255, 0.10);
+}
+
+li.ten{
+  left: 90%;
+  width: 160px;
+  height: 160px;
+  border-radius: 40px 0 40px 0;
+  
+  animation-delay: 11s;
+}
+
+
+
+@-webkit-keyframes square {
+0%   { transform: translateY(0); }
+100% { transform: translateY(-700px) rotate(600deg); }
+}
+@keyframes square {
+0%   { transform: translateY(0); }
+100% { transform: translateY(-700px) rotate(600deg); }
 }
